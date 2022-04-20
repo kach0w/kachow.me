@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kachow Products</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <h1>Kachow Products</h1>
+    <h3>&nbsp;</h3>
+    <h3>&nbsp;</h3>
+   
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul class="no-bullets">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="blog.html"><i class="fab fa-blogger"></i> Blog</a></li>
+
+                <li><a href='https://stats.uptimerobot.com/xNpRyiLMBN'><i class="fab fa-discord" ></i> Bot Status</a></li> 
+                <button class="dropdown-btn"><i class="fa-solid fa-blender"></i> Blender
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="https://ibb.co/wWCw7Qh"><i class="fa-solid fa-jedi"></i> Star Wars Project</a>
+                  </div>
+                <button class="dropdown-btn"><i class="fa-solid fa-user"></i> Contact
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="https://github.com/KachowProducts"><i class="fab fa-github"></i> Github</a>
+                    <a href=""><i class="fab fa-discord" ></i> kachow#9170</a>
+                    <a href=""></a><i class="fa-solid fa-mobile-screen-button"></i> 510-766-8224</a>
+                  </div>
+            </ul> 
+            
+        </div>
+    </div>
+    <h3>&nbsp;</h3>
+    <p>
+        Hello. Welcome to the Blog / Stuff I am currently working on portion of this website.
+    </p>
+        <div class="blogpost">
+            <h2>Javascript</h2>
+            <h5>April 16, 2022</h5>
+            <p>Recently, I have been getting interested in the programming language, javascript. In fact, it is the reason that I am currently making this website. 
+            I went down this rabbithole because of my interest in making a Discord bot. The bot's purpose was to have fun with some friends by using the bot to 
+            secretly dm non-adminstrators in my server from a secret text channel. Later, I was interested in trolling some friends with a java script program 
+            that would get the user's public ip address. I would then make an alt-discord account and act like a hacker. The way that the program worked was if 
+            the person clicked on a link I send them, the program would print their public ip address into the console. To try to disguise the link, I will next 
+            be making a brand new website with ngrok so that I can host java script on it for free and no one will be able to see the program code behind it. 
+            Because with the first program, the code was hosted on Repl.com so people would take advantage of its open-sourcness and just look at the code 
+            and see everything about it. Here is an example of what they would see if they looked for the user (which was mentioned in the orignal link because of Repl being bad):</p>
+            <style>
+            img {
+                min-width: 200px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            </style>
+            <img src="/Gallery/Blog Posts Pics//JavascriptSS.png" width=45% height="50%" style = >   
+        
+        </div>
+<script>
+    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+    });
+    }
+</script>
+</body>
+</html>

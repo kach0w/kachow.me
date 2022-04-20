@@ -1,0 +1,69 @@
+<h3>&nbsp;</h3>
+<link rel="stylesheet" href="style.css">
+<head>
+  <title>Kachow Products</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico?">
+</head>
+<h1>AEWS</h1>
+<!-- Top navigation -->
+<div class="nav">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="AEWS.html" class="active">AEWS</a></li>
+</ul>
+</div>
+<h3>&nbsp;</h3>
+<p>Disclaimer: please don't actually use this to plan your studies, this is mainly a joke.</p>
+<h3>&nbsp;</h3>
+<p>The Assessment Expectancy Warning System declares a score based on the likeliness of a test or quiz.
+    <br>The score is based on the weight and risk of the assessment as well as the likeliness of a pop quiz.
+    <br>The score ranges from 1 to 5, 1 being the lowest threat and 5 being the highest threat.
+</p>
+<h3>&nbsp;</h3>
+<!-- Current Date and Time -->
+<h3><strong>Today's Date:</strong></h3>
+<h1 style="color: rgb(255, 200, 47);"><p id="date"></p></h1>
+<script>
+  n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+</script>
+<h3>&nbsp;</h3>
+<h3><strong>Today's Score:</strong></h3>
+<!-- Logic -->
+<h1 style="color: rgb(255, 200, 47);"><p id="prob"></p></h1>
+<br><br>
+<script>
+  var today = new Date();
+  var dayOfWeek = today.getDay();
+  var prob = 0;
+  if(dayOfWeek==1){
+      prob+=1;
+  }
+  else if(dayOfWeek==2){
+      prob+=2;
+  }  
+  else if(dayOfWeek==3){
+      prob+=5;
+  } 
+  else if(dayOfWeek==4){
+      prob+=4;
+  }   
+  else if(dayOfWeek==5){
+      prob+=4 ;
+  }   
+  else if(dayOfWeek==6 || dayOfWeek==0){
+      prob=0;
+  }
+  document.getElementById("prob").innerHTML = prob;
+</script>
+
+
+
+<p> Credit to @DairyProducts for inspiration, here is his website: </p>
+<p><a href="https://dairyproducts.github.io" target="_blank">Derek's Website</a></p>
+<p> Check my <a href="https://github.com/KachowProducts/KachowProducts.github.io/blob/main/AEWS.html" target="_blank">Github code</a> for more information on how each day's score is calculated </p>
+
+<p> FELIX IS COOL (@ChromaticRain#8279) </p>
