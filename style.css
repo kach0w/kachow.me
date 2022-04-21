@@ -1,3 +1,4 @@
+ @font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
 body {
     background-color: rgb(255, 255, 255);
     margin: 0;
@@ -7,7 +8,7 @@ body {
   h1 {
   color: rgb(0, 0, 0);
   text-align: center;
-  font-family: Sans-serif;
+  font-family: ChomskyRegular;
   font-size: 360%;
   line-height: 40%;
   font-weight: 10;
