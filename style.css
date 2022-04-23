@@ -1,6 +1,6 @@
  @font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: #5e2750;
     margin: 0;
     padding: 0;
     min-width: 330px;
