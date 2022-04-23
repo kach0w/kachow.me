@@ -6,7 +6,7 @@ body {
     min-width: 330px;
   }
   h1 {
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
   font-family: Sans-serif;
   font-size: 360%;
@@ -14,13 +14,13 @@ body {
   font-weight: 10;
   }
   p {
-  color: rgb(0, 0, 0);
+  color: white;;
   text-align: center;
   line-height: 100%;
   font-family: sans-serif;
   }
   h2 {
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
   font-family: Sans-serif;
   line-height: 40%;
@@ -33,7 +33,7 @@ body {
   line-height: 0.00000001%;
   }
   a {
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 140%;
     font-family: Sans-serif;
     font-weight: 10;
