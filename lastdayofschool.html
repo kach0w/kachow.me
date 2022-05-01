@@ -65,18 +65,22 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+    let DAYS = " Days ";
+    let HOURS = " Hours ";
+    let MINUTES = " Minutes ";
+    let SECONDS = " Seconds ";
+    
     if(days<=1){
-        let DAYS = " Day ";
+        DAYS = " Day ";
     }
     if(hours<=1){
-        let HOURS = " Hour ";
+        HOURS = " Hour ";
     }
     if(minutes<=1){
-        let MINUTES = " Minute ";
+        MINUTES = " Minute ";
     }
     if(seconds<=1){
-        let SECONDS = " Second ";
+        SECONDS = " Second ";
     }    
 
   //document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
