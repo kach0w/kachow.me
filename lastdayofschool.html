@@ -66,20 +66,19 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
-// if(days<=1){
-// var DAYS = " Day ";
-// }
-// if(hours<=1){
-//     var HOURS = " Hour ";
-// }
-// if(minutes<=1){
-//     var MINUTES = " Minute ";
-// }
-// if(seconds<=1){
-//         var SECONDS = " Second ";
-// }    
-  
+    if(days<=1){
+        let DAYS = " Day ";
+    }
+    if(hours<=1){
+        let HOURS = " Hour ";
+    }
+    if(minutes<=1){
+        let MINUTES = " Minute ";
+    }
+    if(seconds<=1){
+        let SECONDS = " Second ";
+    }    
+
   document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
 
   // If the count down is finished, write some text
