@@ -52,7 +52,7 @@ a:active { text-decoration: none; }
 /* Fixed sidenav, full height */
 .sidebar {
   height: 100%;
-  width: 150px;
+  width: 100px;
   position: fixed;
   z-index: 1;
   top: 30;
