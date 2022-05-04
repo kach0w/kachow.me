@@ -164,8 +164,9 @@ a:active { text-decoration: none; }
     padding: 20px;
     background: #ffffff;
   }
- 
-
+  tabler{
+     width: 60vw;
+  }
   /* Fake image */
   .fakeimg {
     background-color: #aaa;
