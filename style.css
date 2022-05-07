@@ -99,7 +99,7 @@ a:active { text-decoration: none; }
   background-color: white;
   padding-left: 8px;
 }
-.dropdown-container .a{
+.dropdown-container a {
   font-size: 20px;
 }
 
