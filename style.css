@@ -105,7 +105,7 @@ a:active { text-decoration: none; }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
-  float: right;
+  float: center;
   padding-right: 96;
 } 
 .wrapper{
