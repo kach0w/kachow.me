@@ -46,8 +46,18 @@
   <h2> Days Till School is Over! </h2>
   <!-- Display the countdown timer in an element -->
     <b><h1 id="demo"></h1></b>
-
 <script>
+    function show_image(src, width, height, alt) {
+        var img = document.createElement("img");
+        img.src = src;
+        img.width = width;
+        img.height = height;
+        img.alt = alt;
+
+        // This next line will just add it to the <body> tag
+        document.body.appendChild(img);
+    }
+
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 3, 2022 12:00:00").getTime();
 
@@ -81,6 +91,8 @@ var x = setInterval(function() {
     }
     if(seconds<=1){
         SECONDS = " Second ";
+            show_image("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/party-popper_1f389.png", 500,500, "Party");
+
     }    
 
   //document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
@@ -90,7 +102,9 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "HAGS!!";
+
   }
+  
 }, 1000);
 </script>
     
