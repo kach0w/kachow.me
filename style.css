@@ -98,7 +98,7 @@ a:active { text-decoration: none; }
   display: none;
   background-color: white;
   padding-left: 8px;
-  font-size 20px;
+  font-size: 20px;
 }
 
 /* Optional: Style the caret down icon */
