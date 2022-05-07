@@ -98,6 +98,8 @@ a:active { text-decoration: none; }
   display: none;
   background-color: white;
   padding-left: 8px;
+}
+.dropdown-container .a{
   font-size: 20px;
 }
 
