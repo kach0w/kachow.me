@@ -1,4 +1,9 @@
- @font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
+@font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+   font-family: 'Open Sans',serif;
+}
 body {
     background-color: #5e2750;
     margin: 0;
