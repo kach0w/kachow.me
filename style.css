@@ -27,19 +27,19 @@ body {
   color: white;
   text-align: center;
   line-height: 100%;
-  font-family: sans-serif;
+  font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
   }
   h2 {
   color: black;
   text-align: center;
-  font-family: Sans-serif;
+  font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
   line-height: 40%;
   font-weight: 10;
   }
   h3 {
   color: rgb(230, 230, 230);
   text-align: center;
-  font-family: Sans-serif;
+  font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
   line-height: 0.00000001%;
   }
   a {
@@ -170,7 +170,7 @@ a:active { text-decoration: none; }
   
   /* Add a gray background color with some padding */
   body {
-    font-family: Arial;
+    font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
     padding: 20px;
     background: #ffffff;
   }
