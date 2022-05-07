@@ -91,18 +91,18 @@ var x = setInterval(function() {
     }
     if(seconds<=1){
         SECONDS = " Second ";
-            show_image("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/party-popper_1f389.png", 500,500, "Party");
-
     }    
 
   //document.getElementById("demo").innerHTML = days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
   document.getElementById("demo").innerHTML = days + DAYS + hours + HOURS + minutes + MINUTES + seconds + SECONDS;
 
   // If the count down is finished, write some text
-  if (distance < 0) {
+ if(distance == ){
+     show_image("https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/mozilla/36/party-popper_1f389.png", 500,500, "Party");
+ }
+ if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "HAGS!!";
-
   }
   
 }, 1000);
