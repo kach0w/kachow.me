@@ -23,7 +23,7 @@
     <h3>&nbsp;</h3>
    
     <div class="wrapper">
-        <button class = menubotton><i class="fa-solid fa-bars"></i> </button>
+        <button onclick="myFunction()" class = menubotton><i class="fa-solid fa-bars"></i> </button>
             <div class="sidebar">
                 <ul class="no-bullets">
                     <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
@@ -76,6 +76,14 @@
         }
     });
     }
+    function myFunction() {
+      var x = document.getElementById("sidebar");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+    }
+} 
 </script>
 
 </body>
