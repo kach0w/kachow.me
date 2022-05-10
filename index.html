@@ -23,8 +23,8 @@
     <h3>&nbsp;</h3>
    
     <div class="wrapper">
-        <button onclick="myFunction()" <i class="fa-solid fa-bars"></i> Menu </button>
-            <div class="sidebar">
+        <button onclick="myFunction()"> < </button>
+            <div id="mySidebar class="sidebar">
                 <ul class="no-bullets">
                     <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
                     <li><a href="blog.html"><i class="fab fa-blogger"></i> Blog</a></li>
@@ -77,14 +77,14 @@
     });
     }
     function myFunction() {
-      var elems = document.getElementsByClassName("sidebar");
-      for (var i = 0; i < elems.length; i++ ) {
-        if (elems.style.display === "none") {
-            elems[i].style.display = "block";
-        } else {
-            elems[i].style.display = "none";
-        }
+      var elems = document.getElementById("mySidebar");
+      
+      if (elems.style.width === "225px") {
+        elems.style.width = "0px";
+      } else {
+        elems.style.display = "225px";
       }
+      
       
 } 
 </script>
