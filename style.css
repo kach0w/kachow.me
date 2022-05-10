@@ -98,7 +98,7 @@ a:active { text-decoration: none; }
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: white;
+  background-color: #2c5694;
   padding-left: 8px;
 }
 .dropdown-container a {
