@@ -58,6 +58,13 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
+
+.menubutton{
+    font-size: 30px;
+    color: black;
+    text-align: left;
+}
+
  /* Fixed sidenav, full height */
 .sidebar {
   height: 100%;
