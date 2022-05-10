@@ -61,7 +61,7 @@ a:active { text-decoration: none; }
  /* Fixed sidenav, full height */
 .sidebar {
   height: 100%;
-  width: 10%;
+  width: 7.5%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -69,6 +69,7 @@ a:active { text-decoration: none; }
   background-color: #3b82f6;
   overflow-x: hidden;
   padding-top: 200px;
+  border-radius: 15px;
 }
 
 /* Style the sidenav links and the dropdown button */
