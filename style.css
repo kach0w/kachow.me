@@ -61,7 +61,7 @@ a:active { text-decoration: none; }
  /* Fixed sidenav, full height */
 .sidebar {
   height: 100%;
-  width: 5%;
+  width: 20px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -82,10 +82,11 @@ a:active { text-decoration: none; }
   border: none;
   background: none;
   width:100%;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   outline: none;
   font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
+  
 }
 /* Main content */
 .main {
