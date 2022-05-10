@@ -118,7 +118,7 @@ a:active { text-decoration: none; }
   .wrapper .sidebar{
     width: 225px;
     height: 100%;
-    padding: 200px 0px;
+    padding: 225px 0px;
     position: fixed;
   }
   ul.no-bullets {
