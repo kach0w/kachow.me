@@ -88,6 +88,11 @@ a:active { text-decoration: none; }
   font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
   
 }
+.sidebar a:hover, .dropdown-btn:hover{
+    color: white;
+}
+
+
 /* Main content */
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
