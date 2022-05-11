@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
     <link rel="icon" href="kachowgi.gif" type="image/gif" > 
+    <link rel="stylesheet" href="css/animations.css">
     <style>
     body{
         font-family: Google-sans, sans-serrif;
@@ -23,21 +24,19 @@
     <h3>&nbsp;</h3>
    
     <div class="wrapper">
-        <a href="index.html"><i class="fa fa-home"></i> Home</a> 
-        <a href="blog.html"><i class="fab fa-blogger"></i> Blog</a>
-        <a href="lastdayofschool.html"><i class="fa-solid fa-umbrella-beach"></i> HAGS!</a>
-        <a href='https://stats.uptimerobot.com/xNpRyiLMBN'><i class="fab fa-discord" ></i> Bot Status</a>
-        <a href='email.html'><i class="fa-solid fa-envelope"></i> Email Thing</a>
-        <a href="blender.html'><i class="fa-solid fa-blender"></i> Blender</a>
-           
-        <button class="dropdown-btn"><i class="fa-solid fa-user"></i> Contact
-            <i class="fa fa-caret-down"></i>
-            </button>
+        <a class="fadeIn" href="index.html"><i class="fa fa-home"></i> Home</a> 
+        <a class="fadeIn" href="blog.html"><i class="fab fa-blogger"></i> Blog</a>
+        <a class="fadeIn" href="lastdayofschool.html"><i class="fa-solid fa-umbrella-beach"></i> HAGS!</a>
+        <a class="fadeIn" href='https://stats.uptimerobot.com/xNpRyiLMBN'><i class="fab fa-discord" ></i> Bot Status</a>
+        <a class="fadeIn" href='email.html'><i class="fa-solid fa-envelope"></i> Email Thing</a>
+        <a class="fadeIn" href="blender.html"><i class="fa-solid fa-blender"></i> Blender</a>
+        <button class="dropdown-btn"><i class="fa-solid fa-user"></i> Contact <i class="fa fa-caret-down"></i></button>
             <div class="dropdown-container">
-            <a href="https://github.com/KachowProducts"><i class="fab fa-github"></i> Github</a>
-            <a href=""><i class="fab fa-discord" ></i> kachow#9170</a>
-            <a href=""><i class="fa-solid fa-mobile-screen-button"></i> 510-766-8224</a>
+                <a href="https://github.com/KachowProducts"><i class="fab fa-github"></i> Github</a>
+                <a href=""><i class="fab fa-discord" ></i> kachow#9170</a>
+                <a href=""><i class="fa-solid fa-mobile-screen-button"></i> 510-766-8224</a>
             </div>
+
                
     </div>
         <div class="content">
@@ -67,16 +66,8 @@
         dropdownContent.style.display = "block";
         }
     });
-    }
-    function myFunction() {
-      var elems = document.getElementById("mySidebar");
-      
-      if (elems.style.width === "225px") {
-        elems.style.width = "0px";
-      } else {
-        elems.style.display = "225px";
-      }
-      
+    
+    
       
 } 
 </script>
