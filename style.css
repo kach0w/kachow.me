@@ -90,11 +90,14 @@
     }
     .dropdown-container {
         position: fixed;
-        margin-left: 81vw;
-        margin-top: 8vh;
+        margin-left: 84vw;
+        margin-top: 6vh;
         width: 230px;
         padding: 6px 4px 6px 4px;
         border-radius: 15px;
+       
+    }
+    
     }
     
     /* Main content */
