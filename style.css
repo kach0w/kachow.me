@@ -95,19 +95,8 @@
         width: 230px;
         padding: 6px 4px 6px 4px;
         border-radius: 15px;
-       
-    }
-    
-    }
-    
-    /* Main content */
-    
-    
-    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-    .dropdown-container {
-      display: none;
-      background-color: #3b82f6;
-      padding-left: 0px;
+        display: none;
+        background-color: #3b82f6;
     }
     .dropdown-container a {
       font-size: 20px;
