@@ -70,8 +70,8 @@
     
     /* Style the sidenav links and the dropdown button */
     .wrapper{
-        width: 75vw;
-        margin-left: 12.5vw;
+        width: 80vw;
+        margin-left: 10vw;
     }
 
     .wrapper a, .dropdown-btn {
