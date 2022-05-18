@@ -107,10 +107,8 @@
       margin-top: 70vh;
       font-size: 30px;
       text-align: center;
-      animation-name: bounce-top;
-      animation-duration: 1000ms;
-      animation-timing-function: ease;
-      animation-iteration-count: infinite;
+      -webkit-animation: bounce-top 1s infinite  alternate;
+      animation: bounce-top 1s infinite  alternate;
     }
     .ArrowDown a{
       color: #3b82f6;
