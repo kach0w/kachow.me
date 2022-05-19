@@ -179,7 +179,7 @@
         padding-top: 0px;
         border-radius: 8px;
         display: none;
-        background-color: #3b82f6;
+        background-color: #3a588a;
         padding-left: 0px;
     }
     .dropdown-container a {
@@ -264,12 +264,13 @@
         background: #ddd;
         margin-top: 20px;
       }
-      ul {
+      .Projects ul {
         list-style-type: none;
         text-align: center;
+        
       }
       
-      ul li a {
+      .Projects ul li a {
         text-decoration: none;
         font-size: 30px;
         color: rgb(0, 0, 0);
@@ -282,6 +283,40 @@
       ul li a:hover{
         color:#3b82f6; 
       }
+      
+      /*All the timer stuff in HAGS*/
+      .Timer{
+        text-align: center;
+      }
+      .Timer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        border-style: solid;
+        border-radius: 15px;
+        border-width: 2px;
+        border-color: #3b82f6;
+        width: 100px;
+        text-align: center;
+        background-color: #3b82f6;
+    }
+    .Timer ul #DaysUnits, #HoursUnits, #MinutesUnits, #SecondsUnits{
+      font-size: 15px;
+    }
+    .Timer ul li{
+      font-size: 360%;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      color: white;
+    }
+
+
+
       /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
       @media screen and (max-width: 800px) {
         .leftcolumn, .rightcolumn {   
