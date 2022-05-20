@@ -234,6 +234,7 @@
      ul {
   	list-style-type: none;
 	text-align:center;
+	font-size: 30px;
      }    
       /* Right column */
       .rightcolumn {
