@@ -231,7 +231,10 @@
         float: left;
         width: 75%;
       }
-      
+     ul {
+  	list-style-type: none;
+	text-align:center;
+     }    
       /* Right column */
       .rightcolumn {
         float: left;
