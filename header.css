@@ -53,7 +53,7 @@ body {
 .header a:hover {
     color: #5f5353;;
 }
-.current{
+.header .current{
     text-decoration: underline solid #1a73e8;
     text-underline-offset: 10px;
 }
