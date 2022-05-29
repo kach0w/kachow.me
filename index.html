@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Kachow</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico?">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="/Gallery/94.png" type="image/png" > 
+    <link rel="icon" href="kachowgi.gif" type="image/gif" > 
     <link rel="stylesheet" href="css/animations.css">
     <style>
     body{
@@ -24,42 +24,39 @@
     <h3>&nbsp;</h3>
    
     <div class="wrapper">
-        <a class="fadeIn" href="index.html"><i class="fa fa-home"></i> Home</a> 
-        <a class="fadeIn" href="blog.html"><i class="fab fa-blogger"></i> Blog</a>
-        
-        <button class="dropdown-btn"><i class="fa-solid fa-user"></i> Contact <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-container">
-                <a href="https://github.com/kach0w"><i class="fab fa-github"></i> Github</a>
-                <a href=""><i class="fab fa-discord" ></i> kachow#9170</a>
-                <a href=""><i class="fa-solid fa-mobile-screen-button"></i> 510-766-8224</a>
-            </div>        
+        <div class="links">
+            <a class="fadeIn" href="index.html"><i class="fa fa-home"></i> Home</a> 
+            <a class="fadeIn" href="blog.html"><i class="fab fa-blogger"></i> Blog</a>
+            <button class="dropdown-btn"><i class="fa-solid fa-user"></i> Contact <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-container">
+                    <a href="https://github.com/kach0w"><i class="fab fa-github"></i> Github</a>
+                    <a href=""><i class="fab fa-discord" ></i> kachow#9170</a>
+                    <a href=""><i class="fa-solid fa-mobile-screen-button"></i> 510-766-8224</a>
+                </div>     
+        </div>
+        <div class="ArrowDown" id="Arrow">
+            <a><i class="fa-solid fa-arrow-down"></i></a> 
+        </div>   
     </div>
-    <div class="ArrowDown" id="Arrow">
-        <a href=""><i class="fa-solid fa-arrow-down"></i></a> 
+    
+    <div class="main-content">
+        <h3>&nbsp;</h3>
+        <h3>&nbsp;</h3>
+        <h2>Here are some of my projects:</h2>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+
+            <div class="Projects">
+            <ul>
+                <li><a href="lastdayofschool.html">Days Till School is Over!</a></li>
+                <li><a href='https://stats.uptimerobot.com/xNpRyiLMBN'>Discord Bot Status</a></li>
+                <li><a href='email.html'>Email API</a></li>
+                <li><a href="blender.html">Blender Projects</a></li>
+                <li><a href="AEWS.html">Assesment Expectancy Warning System</a></li>
+            </ul>
+            </div>
     </div>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
-    <h2>Here are some of my projects:</h2>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
-
-
-    <ul>
-        <li><a href="lastdayofschool.html">Days Till School is Over!</a></li>
-        <li><a href='https://dapper-tapioca-35167a.netlify.app'>NBA API</a></li>
-        <li><a href='Calculator/calculator.html'>Apple Calculator Recreation</a></li>
-        <li><a href='email.html'>Email API</a></li>
-        <li><a href='https://meek-paletas-629c41.netlify.app/'>Weather Forecast</a></li>
-        <li><a href='https://stats.uptimerobot.com/xNpRyiLMBN'>Discord Bot Status</a></li>
-        <li><a href="blender.html">Blender Projects</a></li>
-        <li><a href="AEWS.html">Assesment Expectancy Warning System</a></li>
-    </ul>
-
-
-
-
-
-
+ 
 <script>
     //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
     var dropdown = document.getElementsByClassName("dropdown-btn");
