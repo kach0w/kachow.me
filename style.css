@@ -12,15 +12,16 @@
         background-color: #fff;
         margin: 0;
         padding: 0;
-        min-width: 330px;
+        overflow-x: hidden;
       }
       h1 {
       color: black;
       text-align: center;
       font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
-      font-size: 360%;
+      font-size: 700%;
       line-height: 40%;
       font-weight: 10;
+      margin-top: 35vh;
       }
       p {
       color: black;
@@ -29,7 +30,7 @@
       font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
       }
       h2 {
-      color: black;
+      color: rgb(255, 255, 255);
       text-align: center;
       font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
       line-height: 40%;
@@ -65,20 +66,19 @@
         text-align: left;
     }
     
-     /* Fixed sidenav, full height */
-    
-    
-    /* Style the sidenav links and the dropdown button */
     .wrapper{
-        /* width: 80vw; */
+        width: 100vw;
+        height: 100%;
         margin-top: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+
+        line-height: normal;
     }
 
-    .wrapper a, .dropdown-btn {
+     .links a, .dropdown-btn {
       text-decoration: none;
       font-size: 30px;
       color: white;
@@ -95,27 +95,34 @@
       border-radius: 8px;
       word-wrap: normal;
       display: inline-block;
-      margin-right: 5px;
       animation-name: FadeIn;
-      animation-duration: 3s;
+      animation-duration: 2s;
       transition-timing-function: linear;
       opacity: 0;
       animation-fill-mode: both;
-     
     }
     .ArrowDown{
-      margin-top: 70vh;
+      margin-top: 75vh;
       font-size: 30px;
       text-align: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      height: 100px;
       -webkit-animation: bounce-right 0.8s both;
+      background-color: white;
+      color: #3b82f6;
+      font-size: 45px;
       animation: bounce-right 0.8s both;
+      display: flex;
+      position: absolute;
     }
     .ArrowDown{-webkit-animation:wobble-hor-bottom 2s infinite both;animation:wobble-hor-bottom 2s infinite both}
     .ArrowDown a{
       color: #3b82f6;
       
     }
-    .dropdown-btn .dropdown-container{animation-duration: 0ms; animation-delay: 50ms;}
+    /* .dropdown-btn .dropdown-container{animation-duration: 0ms; animation-delay: 50ms;} */
     .dropdown-btn{ animation-delay: 300ms; }
     .wrapper a:nth-child(1){ animation-delay: 100ms; }
     .wrapper a:nth-child(2){ animation-delay: 200ms; }
@@ -169,21 +176,22 @@
         }
       }
     
-    
-    
     .dropdown-container {
-        position: fixed;
+        position: relative;
         margin-left: 21.5vw;
-        margin-top: 25vh;
         width: 200px;
-        padding-top: 0px;
         border-radius: 8px;
         display: none;
         background-color: #3b82f6;
         padding-left: 0px;
+        z-index: 9;
+        line-height: 5px;
+        margin-top: 25px;
     }
     .dropdown-container a {
       font-size: 20px;
+      line-height: 5px;
+      margin-top: 0px;
     }
  
     
@@ -200,12 +208,9 @@
       /* Add a gray background color with some padding */
       body {
         font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
-        padding: 20px;
         background: #ffffff;
       }
-      tabler{
-         width: 60vw;
-      }
+
       /* Fake image */
       .fakeimg {
         background-color: #aaa;
@@ -224,18 +229,27 @@
          margin-left: auto;
          margin-right: auto;
          height: 100%
-    
-    
+      }
+
+      .main-content {
+        background-color: black;
+        color: white;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        margin-top: 50vh;
+      }
+      .main-content a {
+        color: white;
+      }
+      .Projects a{
+        color: white;
       }
       .leftcolumn {
         float: left;
         width: 75%;
       }
-     ul {
-  	list-style-type: none;
-	text-align:center;
-	font-size: 30px;
-     }    
+      
       /* Right column */
       .rightcolumn {
         float: left;
@@ -273,11 +287,13 @@
         text-align: center;
         
       }
-      
+      .Projects h2{
+        color: white !important;
+      }
       .Projects ul li a {
         text-decoration: none;
         font-size: 30px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 0px;
@@ -304,11 +320,9 @@
         border-radius: 15px;
         border-width: 2px;
         border-color: #3b82f6;
-        width: 150px;
+        width: 100px;
         text-align: center;
         background-color: #3b82f6;
-	-webkit-animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     .Timer ul #DaysUnits, #HoursUnits, #MinutesUnits, #SecondsUnits{
       font-size: 15px;
@@ -319,33 +333,6 @@
       padding-bottom: 10px;
       padding-top: 10px;
       color: white;
-	  
-
-    }
-
-    @-webkit-keyframes slide-in-bck-top {
-      0% {
-        -webkit-transform: translateZ(700px) translateY(-300px);
-                transform: translateZ(700px) translateY(-300px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateZ(0) translateY(0);
-                transform: translateZ(0) translateY(0);
-        opacity: 1;
-      }
-    }
-    @keyframes slide-in-bck-top {
-      0% {
-        -webkit-transform: translateZ(700px) translateY(-300px);
-                transform: translateZ(700px) translateY(-300px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateZ(0) translateY(0);
-                transform: translateZ(0) translateY(0);
-        opacity: 1;
-      }
     }
 
 
