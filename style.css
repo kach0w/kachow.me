@@ -141,26 +141,29 @@
       align-items: center;
       align-content: center;
       height: 100px;
-      -webkit-animation: bounce-right 0.8s both;
       background-color: white;
       color: #3b82f6;
-      animation: bounce-right 0.8s both;
       display: flex;
       position: absolute;
     }
 
-    .ArrowDown{-webkit-animation:wobble-hor-bottom 2s infinite both;animation:wobble-hor-bottom 2s infinite both}
+    .ArrowDown{
+      -webkit-animation:wobble-hor-bottom 2s infinite both;
+      animation:wobble-hor-bottom 2s infinite both;
+    }
     .ArrowDown a{
       color: #3b82f6;
-      
     }
+
+
+
     /* .dropdown-btn .dropdown-container{animation-duration: 0ms; animation-delay: 50ms;} */
     .dropdown-btn{ animation-delay: 700ms; }
     .wrapper a:nth-child(1){ animation-delay: 500ms; }
     .wrapper a:nth-child(2){ animation-delay: 600ms; }
     .wrapper a:nth-child(3){ animation-delay: 700ms; }
-
-      @-webkit-keyframes wobble-hor-bottom{0%,100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}30%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}45%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}75%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}@keyframes wobble-hor-bottom{0%,100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}30%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}45%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}75%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}
+    
+      @-webkit-keyframes wobble-hor-bottom{0%, 100%{opacity: 1; -webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}30%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}45%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}75%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}@keyframes wobble-hor-bottom{0%,100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateX(-30px) rotate(-6deg);transform:translateX(-30px) rotate(-6deg)}30%{-webkit-transform:translateX(15px) rotate(6deg);transform:translateX(15px) rotate(6deg)}45%{-webkit-transform:translateX(-15px) rotate(-3.6deg);transform:translateX(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateX(9px) rotate(2.4deg);transform:translateX(9px) rotate(2.4deg)}75%{-webkit-transform:translateX(-6px) rotate(-1.2deg);transform:translateX(-6px) rotate(-1.2deg)}}
 
       @keyframes FadeIn {
         
@@ -190,24 +193,6 @@
         }
       }
       
-      @-o-keyframes FadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-      
-      @-ms-keyframes FadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    
     .dropdown-container {
         position: relative;
         margin-left: 21.5vw;
@@ -289,6 +274,9 @@
         padding-left: 0px;
         padding-right: 40px;
         line-height: 50px;
+        -webkit-animation: fadeIn 0.8s both;
+        animation: fadeIn 0.8s both;
+        animation-delay: 2s;
       }
        ul li a:hover{
         color:#1d3c6d; 
