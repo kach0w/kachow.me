@@ -47,7 +47,7 @@
             <h3>&nbsp;</h3>
             <h3>&nbsp;</h3>
 
-            <div class="Projects">
+            <div class="Projects hidden ">
             <ul>
                 <li><a href="lastdayofschool.html">Days Till School is Over!</a></li>
                 <li><a href="/Calculator/calculator.html">Apple Calculator</a></li>
@@ -76,14 +76,21 @@
         }
     });
 
-    $(window).scroll(function() {
-    if ($(this).scrollTop()> 20) {
-        $('.ArrowDown').fadeOut();
-     }
-    else {
-      $('.ArrowDown').fadeIn();
-     }
- });
+   $(window).scroll(function() {
+        if ($(this).scrollTop()> 20) {
+            $('.ArrowDown').fadeOut();
+        }
+        else {
+        $('.ArrowDown').fadeIn();
+        }
+        if ($(this).scrollTop()> 600) {
+            $('.Projects').fadeIn();
+        }
+        else{
+            $('.Projects').hide();
+
+        }
+    });
 } 
 </script>
 </body>
