@@ -12,51 +12,59 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/Gallery/94.png" type="image/png" > 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-    <link rel="stylesheet" href="css/animations.css">
-    <style>
-    body{
-        font-family: Google-sans, sans-serrif;
-    }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(window).scroll(function() {
+        if ($(this).scrollTop()> 20) {
+            $('.ArrowDown').fadeOut();
+        }
+        else {
+        $('.ArrowDown').fadeIn();
+        }
+        if ($(this).scrollTop()> 600) {
+            $('.Projects').fadeIn();
+        }
+        else{
+            $('.Projects').hide();
+
+        }
+    });
+</script>  
     
 <body>
-    <h1 id="title-screen">Kachow</h1>
-    <h3>&nbsp;</h3>
-    <h3>&nbsp;</h3>
-   
     <div class="wrapper">
         <div class="links">
-            <a class="fadeIn" href="https://kachow.me"><i class="fa fa-home"></i> Home</a> 
-            <a class="current" href="https://kachow.me/blog"><i class="fab fa-blogger"></i> Blog</a>
-            <a class="current" href="https://kachow.me/aboutme"><i class="fa-solid fa-user"></i> About Me</a>    
+            <a class="fadeIn" id="menu-button" href="https://kachow.me">HOME</a> 
+            <a class="current" href="https://kachow.me/blog">BLOG</a>
+            <a class="current" href="https://kachow.me/aboutme">ABOUT</a>    
+            <a class="fadeIn" id="menu-button" href="https://kachow.me/index#main-content">PROJECTS</a> 
+
         </div>
+        <h1 id="title-screen">Kachow</h1>    
         <div class="ArrowDown" id="arrow">
             <a><i class="fa-solid fa-arrow-down"></i></a> 
-        </div>   
+        </div>      
+        
     </div>
+     
     <div class="main-content" id="main-content">
-        <h3>&nbsp;</h3>
-        <h3>&nbsp;</h3>
-        <h2>Here are some of my projects:</h2>
-            <h3>&nbsp;</h3>
-            <h3>&nbsp;</h3>
+        <h2 id="project-title">Projects:</h2>
 
-            <div class="Projects hidden ">
-            <ul>
-                <li><a href="/Calculator/calculator">Apple Calculator</a></li>
-                <li><a href="https://kachow.me/Weather/weather">Weather Forecast</a></li>
-                <li><a href="https://scores.kachow.me">NBA Live Scores</a></li>
-                <li><a href="https://stats.kachow.me">Player Stats</a></li>
-                <li><a href='https://stats.uptimerobot.com/xNpRyiLMBN'>Discord Bot Status</a></li>
-                <li><a href='email'>Email API</a></li>
-                 <!--
-                <li><a href="https://kachow.me/blender">Blender Projects</a></li>
-                <li><a href="https://kachow.me/AEWS">Assesment Expectancy Warning System</a></li>
-                <li><a href="https://kachow.me/lastdayofschool">Days Till School is Over!</a></li>
-                -->
-            </ul>
-            </div>
+        <div class="Projects ">
+        <ul>
+            <li><a href="/Calculator/calculator">Apple Calculator</a></li>
+            <li><a href="https://kachow.me/Weather/weather">Weather Forecast</a></li>
+            <li><a href="https://scores.kachow.me">NBA Live Scores</a></li>
+            <li><a href="https://stats.kachow.me">Player Stats</a></li>
+            <li><a href='https://stats.uptimerobot.com/xNpRyiLMBN'>Discord Bot Status</a></li>
+            <li><a id="bottom-project" href='email'>Email API</a></li>
+            <!--
+            <li><a href="https://kachow.me/blender">Blender Projects</a></li>
+            <li><a href="https://kachow.me/AEWS">Assesment Expectancy Warning System</a></li>
+            <li><a href="https://kachow.me/lastdayofschool">Days Till School is Over!</a></li>
+            -->
+        </ul>
+        </div>
     </div>
  
 <script>
@@ -73,23 +81,6 @@
         dropdownContent.style.display = "block";
         }
     });
-
-   $(window).scroll(function() {
-        if ($(this).scrollTop()> 20) {
-            $('.ArrowDown').fadeOut();
-        }
-        else {
-        $('.ArrowDown').fadeIn();
-        }
-        if ($(this).scrollTop()> 600) {
-            $('.Projects').fadeIn();
-        }
-        else{
-            $('.Projects').hide();
-
-        }
-    });
-} 
 </script>
 </body>
 </html>
