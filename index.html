@@ -31,36 +31,24 @@
         else {
         $('.ArrowDown').fadeIn();
         }
-        if ($(this).scrollTop()> 600) {
-            $('.Projects').fadeIn();
-        }
-        else{
-            $('.Projects').hide();
-        }
+       
     });
+    var projectScrolled = false;
+    var blogScrolled = false;
     $(window).on('resize scroll', function() {
-        if ($('#blog-title').isInViewport()) {
-            $('#blog-title').addClass('fadeInTop');
-        } else {
-            $('#blog-title').removeClass('fadeInTop');
-        }
-    });
-    $(window).on('resize scroll', function() {
-        if ($('#project-title').isInViewport()) {
+        if ($('#Projects').isInViewport() && !projectScrolled) {
             $('#project-title').addClass('fadeInTop');
-        } else {
-            $('#project-title').removeClass('fadeInTop');
+            $('#Projects').addClass('fadeInTop');
+            var projectScrolled = true;
         }
-    });
-
-    $(window).on('resize scroll', function() {
+        if ($('#blog-title').isInViewport() && !blogScrolled) {
+            $('#blog-title').addClass('fadeInTop');
+            blogScrolled = true;
+        } 
         if ($('.home-blog').isInViewport()) {
             $('.home-blog').show();
             $('.home-blog').addClass('scale-in-center');
-        } else {
-            $('.home-blog').hide();
-            $('.home-blog').removeClass('scale-in-center');
-        }
+        } 
     });
 </script>  
     
@@ -82,7 +70,7 @@
     <div class="main-content" id="main-content">
         <h2 id="project-title">Projects:</h2>
 
-        <div class="Projects ">
+        <div class="Projects" id="Projects">
         <ul>
             <li><a href="/Calculator/calculator">Apple Calculator</a></li>
             <li><a href="https://kachow.me/Weather/weather">Weather Forecast</a></li>
@@ -106,7 +94,7 @@
         <p id="blog-snippet">    
             Recently, I have been getting interested in the programming language, javascript. In fact, it is the reason that I am currently making this website. 
             I went down this rabbithole because of my interest in making a Discord bot. The bot's purpose was to have fun with some friends by using the bot to 
-            secretly dm non-adminstrators in my server from a secret text channel. Later, I was interested in trolling some friends with a java script program... 
+            secretly dm non-adminstrators in my server from a secret text channel. Later, I was interested in trolling some friends with a javascript program... 
         </p>
         <a href="https://kachow.me/Blog/javascript.html" id="read-more">Read More</a>
 
