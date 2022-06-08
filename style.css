@@ -265,6 +265,9 @@
         padding-left: 0px;
         padding-right: 40px;
         line-height: 70px ;
+      }
+
+      .fadeIn {
         -webkit-animation: fadeIn 0.8s both;
         animation: fadeIn 0.8s both;
         animation-delay: 2s;
