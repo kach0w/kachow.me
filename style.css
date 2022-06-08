@@ -336,30 +336,38 @@
       color: white;
     }
 
-    #footer-home-page {
-      height: 200px;
+    .footer-home-page {
+      height: 100px;
+      position: relative;
     }
 
-    .location p{
+    .location {
+      margin: 0;
+      position: absolute;
+      top: 50%;
       float: left;
-      padding-top: 150px;
       padding-left: 20px;
-      font-size: 30px;
+      font-size: 20px;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }    
 
-    .contact a{
+    .contact {
+      margin-left: 95vw;
+      position: absolute;
+      top: 50%;
       float: right;
-      padding-top: 150px;
       padding-right: 20px;
-      font-size: 30px;
+      font-size: 20px;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }    
-
-    .up-arrow{
-      font-size: 50px;
+    
+    .contact a{
+      font-size: 25px !important;
     }
 
-    
-    .up-arrow:hover {
+    .contact a:hover {
       color:#1d3c6d; 
     }
 
