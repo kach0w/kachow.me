@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/Blog/blog.css">
     <title>Kachow</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico?">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></head>
@@ -14,6 +15,15 @@
     <link rel="icon" href="/Gallery/94.png" type="image/png" > 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript">
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
     $(window).scroll(function() {
         if ($(this).scrollTop()> 20) {
             $('.ArrowDown').fadeOut();
@@ -26,8 +36,26 @@
         }
         else{
             $('.Projects').hide();
-
         }
+    });
+    $(window).on('resize scroll', function() {
+        if ($('#blog-title').isInViewport()) {
+            $('#blog-title').addClass('fadeInTop');
+        } else {
+            $('#blog-title').removeClass('fadeInTop');
+        }
+    });
+    $(window).on('resize scroll', function() {
+        if ($('#project-title').isInViewport()) {
+            $('#project-title').addClass('fadeInTop');
+        } else {
+            $('#project-title').removeClass('fadeInTop');
+        }
+    });
+    $('.up-arrow').click(function() {      // When arrow is clicked
+        document.body.scrollIntoView({
+            behavior: "smooth"
+        });
     });
 </script>  
     
@@ -40,13 +68,12 @@
             <a class="fadeIn" id="menu-button" href="https://kachow.me/index#main-content">PROJECTS</a> 
 
         </div>
-        <h1 id="title-screen">Kachow</h1>    
+        <h1 id="title-screen" class="fadeInTop">Kachow</h1>    
         <div class="ArrowDown" id="arrow">
             <a><i class="fa-solid fa-arrow-down"></i></a> 
         </div>      
         
     </div>
-     
     <div class="main-content" id="main-content">
         <h2 id="project-title">Projects:</h2>
 
@@ -57,8 +84,8 @@
             <li><a href="https://scores.kachow.me">NBA Live Scores</a></li>
             <li><a href="https://stats.kachow.me">Player Stats</a></li>
             <li><a href='https://stats.uptimerobot.com/xNpRyiLMBN'>Discord Bot Status</a></li>
-            <!--
             <li><a id="bottom-project" href='email'>Email API</a></li>
+            <!--
             <li><a href="https://kachow.me/blender">Blender Projects</a></li>
             <li><a href="https://kachow.me/AEWS">Assesment Expectancy Warning System</a></li>
             <li><a href="https://kachow.me/lastdayofschool">Days Till School is Over!</a></li>
@@ -66,22 +93,50 @@
         </ul>
         </div>
     </div>
- 
+    <div class="blog-homepage">
+    <h1 id="blog-title" class="blog-title">Blog</h1>
+    <div class="home-blog">
+        <h2>Javascript</h2>
+        <h5>April 16, 2022</h5>
+        <p id="blog-snippet">    
+            Recently, I have been getting interested in the programming language, javascript. In fact, it is the reason that I am currently making this website. 
+            I went down this rabbithole because of my interest in making a Discord bot. The bot's purpose was to have fun with some friends by using the bot to 
+            secretly dm non-adminstrators in my server from a secret text channel. Later, I was interested in trolling some friends with a java script program... 
+        </p>
+        <a href="https://kachow.me/Blog/javascript.html" id="read-more">Read More</a>
+
+    </div>
+    </div>
+    <div id="footer-home-page">
+        <div class="up-arrow">
+            <a id="up-arrow" href=""><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <div class="location">
+            <p>Fremont, California</p>
+        </div>
+        <div class="contact">
+            <a href="https://github.com/kach0w"><i class="fab fa-github"></i></a>
+            <a href="mailto:karsab343@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </div>
 <script>
-    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-    for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
-        } else {
-        dropdownContent.style.display = "block";
-        }
-    });
+    // var dropdown = document.getElementsByClassName("dropdown-btn");
+    // var i;
+    // for (i = 0; i < dropdown.length; i++) {
+    //     dropdown[i].addEventListener("click", function() {
+    //         this.classList.toggle("active");
+    //         var dropdownContent = this.nextElementSibling;
+    //         if (dropdownContent.style.display === "block") {
+    //         dropdownContent.style.display = "none";
+    //         } else {
+    //         dropdownContent.style.display = "block";
+    //         }
+    //     });
+    // }
+
 </script>
 </body>
 </html>
+
+
 
