@@ -52,10 +52,15 @@
             $('#project-title').removeClass('fadeInTop');
         }
     });
-    $('.up-arrow').click(function() {      // When arrow is clicked
-        document.body.scrollIntoView({
-            behavior: "smooth"
-        });
+
+    $(window).on('resize scroll', function() {
+        if ($('.home-blog').isInViewport()) {
+            $('.home-blog').show();
+            $('.home-blog').addClass('scale-in-center');
+        } else {
+            $('.home-blog').hide();
+            $('.home-blog').removeClass('scale-in-center');
+        }
     });
 </script>  
     
@@ -107,10 +112,7 @@
 
     </div>
     </div>
-    <div id="footer-home-page">
-        <div class="up-arrow">
-            <a id="up-arrow" href=""><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
+    <div class="footer-home-page">
         <div class="location">
             <p>Fremont, California</p>
         </div>
@@ -137,6 +139,4 @@
 </script>
 </body>
 </html>
-
-
 
