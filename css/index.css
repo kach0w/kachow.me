@@ -1,15 +1,8 @@
-@font-face {
-  font-family: 'alliance_no.1semibold';
-  src: url('alliance-no-1-semi-bold.woff2') format('woff2'),
-       url('alliance-no-1-semi-bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 
-}
       body {
       /* background-color: #f86449; */
       background-color: white;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+      font-family: 'alliance_no.1semibold';
       margin: 0;
       padding: 0;
       overflow-x: hidden;
@@ -19,7 +12,7 @@
       h1 {
       color: rgb(255, 255, 255);
       text-align: center;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+/*       font-family: 'Alliance No.1 Semi Bold', sans-serif; */
       letter-spacing: -0.03em !important;
       font-feature-settings: "ss02" on,"ss01" on;
       font-size: 55px !important;
@@ -30,12 +23,12 @@
       color: black;
       text-align: center;
       line-height: 100%;
-      font-family:  "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+/*       font-family:  "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
       }
       h2 {
       color: rgb(0, 0, 0);
       text-align: center;
-      font-family:  "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+/*       font-family:  "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
       line-height: 40%;
       font-weight: 10;
       }
@@ -109,7 +102,7 @@
       text-align: center;
       cursor: pointer;
       outline: none;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+/*       font-family: 'Alliance No.1 Semi Bold', sans-serif; */
       border-radius: 8px;
       word-wrap: normal;
       display: inline-block;
