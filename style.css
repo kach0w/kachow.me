@@ -1,17 +1,16 @@
-/* Google Font */
-/* latin */
-/* @font-face {
-    font-family: 'Google Sans';
+@font-face {
+    font-family: 'alliance_no.1semibold';
+    src: url('alliance-no-1-semi-bold.woff2') format('woff2'),
+         url('alliance-no-1-semi-bold.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: local('Google Sans Regular'), local(GoogleSans-Regular), url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format("woff2");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-    } */
+
+}
     
       body {
       /* background-color: #f86449; */
       background-color: white;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+    font-family: 'alliance_no.1semibold';
       margin: 0;
       padding: 0;
       overflow-x: hidden;
@@ -24,8 +23,6 @@
       font-family: 'Alliance No.1 Semi Bold', sans-serif;
       letter-spacing: -0.03em !important;
       font-feature-settings: "ss02" on,"ss01" on;
-      /* font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif; */
-      /* font-size: 700%; */
       font-size: 55px !important;
       line-height: 40%;
       /* font-weight: 10; */
@@ -35,25 +32,25 @@
       color: black;
       text-align: center;
       line-height: 100%;
-        font-family: 'Alliance No.1 Semi Bold', sans-serif;
+    font-family: 'alliance_no.1semibold';
       }
       h2 {
       color: rgb(0, 0, 0);
       text-align: center;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+    font-family: 'alliance_no.1semibold';
       line-height: 40%;
       font-weight: 10;
       }
       h3 {
       color: rgb(230, 230, 230);
       text-align: center;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+    font-family: 'alliance_no.1semibold';
       line-height: 0.00000001%;
       }
       a {
         color: black;
         font-size: 140%;
-        font-family: 'Alliance No.1 Semi Bold', sans-serif;
+    font-family: 'alliance_no.1semibold';
         font-weight: 10;
       }  
     
@@ -114,7 +111,7 @@
       text-align: center;
       cursor: pointer;
       outline: none;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+    font-family: 'alliance_no.1semibold';
       border-radius: 8px;
       word-wrap: normal;
       display: inline-block;
@@ -275,7 +272,7 @@
       #project-title{
         font-size: 80px;
 <<<<<<< HEAD
-        font-family: 'Alliance No.1 Semi Bold', sans-serif;
+    font-family: 'alliance_no.1semibold';
 =======
 >>>>>>> 7ef55362da51d8369d924a78dda232e05c1e4313
         color: rgb(0, 0, 0) !important;
