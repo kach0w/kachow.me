@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'alliance_no.1semibold';
-    src: url('https://kachow.me/alliance-no-1-semi-bold.woff2') format('woff2'),
-         url('https://kachow.me/alliance-no-1-semi-bold.woff') format('woff');
+    src: url('https://kachow.me/alliance-no-1-semi-bold.otf') format('otf2'),
+         url('https://kachow.me/alliance-no-1-semi-bold.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
