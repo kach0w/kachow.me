@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'alliance_no.1semibold';
+    src: url('alliance-no-1-semi-bold.woff2') format('woff2'),
+         url('alliance-no-1-semi-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
 .logo {
     position: relative;
 }
