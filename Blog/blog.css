@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'alliance_no.1semibold';
-    src: url('/alliance-no-1-semi-bold.woff2') format('woff2'),
-         url('/alliance-no-1-semi-bold.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Google Sans';
     font-style: normal;
-
+    font-weight: 400;
+    src: local('Google Sans Regular'), local(GoogleSans-Regular), url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
 }
 
 #blog-snippet {
@@ -12,12 +11,8 @@
 }
 
 #blog-title {
-<<<<<<< HEAD
-    font-family: 'alliance_no.1semibold';
+  font-family: 'Alliance No.1 Semi Bold', sans-serif;
   padding-top: 50px;
-=======
-    padding-top: 50px;
->>>>>>> 7ef55362da51d8369d924a78dda232e05c1e4313
 }
 
 #blog-snippet {
