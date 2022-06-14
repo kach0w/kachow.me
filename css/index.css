@@ -5,11 +5,11 @@
       padding: 0;
       overflow-x: hidden;
       color: white;
+      text-align: center;
       }
 
       h1 {
       color: rgb(255, 255, 255);
-      text-align: center;
       letter-spacing: -0.03em !important;
       font-feature-settings: "ss02" on,"ss01" on;
       font-size: 72px;
@@ -115,7 +115,8 @@
       position: absolute;
       z-index: 1;
       top: 25vh;
-      left: 40vw;
+      left: 39vw;
+      right: auto;
     }
     .fadeInTop {
       -webkit-animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
