@@ -1,16 +1,15 @@
 @font-face {
-    font-family: 'alliance_no.1semibold';
-    src: url('alliance-no-1-semi-bold.woff2') format('woff2'),
-         url('alliance-no-1-semi-bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'alliance_no.1semibold';
+  src: url('alliance-no-1-semi-bold.woff2') format('woff2'),
+       url('alliance-no-1-semi-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
-    
       body {
       /* background-color: #f86449; */
       background-color: white;
-    font-family: 'alliance_no.1semibold';
+      font-family: 'alliance_no.1semibold';
       margin: 0;
       padding: 0;
       overflow-x: hidden;
@@ -20,37 +19,36 @@
       h1 {
       color: rgb(255, 255, 255);
       text-align: center;
-      font-family: 'Alliance No.1 Semi Bold', sans-serif;
+      font-family: 'alliance_no.1semibold';
       letter-spacing: -0.03em !important;
       font-feature-settings: "ss02" on,"ss01" on;
       font-size: 55px !important;
       line-height: 40%;
-      /* font-weight: 10; */
-      margin-top: 35vh;
+      /* margin-top: 35vh; */
       }
       p {
       color: black;
       text-align: center;
       line-height: 100%;
-    font-family: 'alliance_no.1semibold';
+      font-family: 'alliance_no.1semibold';
       }
       h2 {
       color: rgb(0, 0, 0);
       text-align: center;
-    font-family: 'alliance_no.1semibold';
+      font-family: 'alliance_no.1semibold';
       line-height: 40%;
       font-weight: 10;
       }
       h3 {
       color: rgb(230, 230, 230);
       text-align: center;
-    font-family: 'alliance_no.1semibold';
+      font-family: 'alliance_no.1semibold';
       line-height: 0.00000001%;
       }
       a {
         color: black;
         font-size: 140%;
-    font-family: 'alliance_no.1semibold';
+        font-family: 'alliance_no.1semibold';
         font-weight: 10;
       }  
     
@@ -111,7 +109,7 @@
       text-align: center;
       cursor: pointer;
       outline: none;
-    font-family: 'alliance_no.1semibold';
+      font-family: 'alliance_no.1semibold';
       border-radius: 8px;
       word-wrap: normal;
       display: inline-block;
@@ -121,17 +119,6 @@
       opacity: 0;
       animation-fill-mode: both;
       animation-delay: 10s;
-
-
-    }
-
-    #title-screen {
-      font-size: 700% !important;
-      font-weight: 800 !important;
-      line-height: 0;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
     }
 
     .fadeInTop {
@@ -164,14 +151,14 @@
     }
     
     .ArrowDown{
-      margin-top: 38vh;
-      margin-left: 50vw;
+      margin-top: 85vh;
+      margin-left: 49vw;
       font-size: 35px;
       height: 100px;
       background-color: none;
       color: white;
       display: flex;
-      position: absolute;
+      position: fixed;
       -webkit-animation:wobble-hor-bottom 2s infinite both;
       animation:wobble-hor-bottom 2s infinite both;
     }
@@ -271,10 +258,7 @@
       }
       #project-title{
         font-size: 80px;
-<<<<<<< HEAD
-    font-family: 'alliance_no.1semibold';
-=======
->>>>>>> 7ef55362da51d8369d924a78dda232e05c1e4313
+        font-family: 'alliance_no.1semibold';
         color: rgb(0, 0, 0) !important;
       }
       .Projects ul li a {
@@ -303,7 +287,7 @@
       
       .blogpost p {
         color: white;
-        font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
+        font-family: 'alliance_no.1semibold';
         font-size : 20px;
       }
       .blogpost h2 {
