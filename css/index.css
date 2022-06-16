@@ -26,7 +26,6 @@
       text-align: center;
       line-height: 40%;
       font-weight: 10;
-      font-family: ;
       }
       h3 {
       color: rgb(230, 230, 230);
@@ -53,11 +52,10 @@
 
     .wrapper{
         width: 100vw;
-        height: 100vh;
+        height: 100vh !important;
         align-items: center;
         text-align: center;
         line-height: normal;
-        background-color: #130f40;
         background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
     }
 
@@ -226,26 +224,16 @@
       float: center;
       padding-right: 96;
     }  */
+    
+    
 
-      .blogpost {
-         /*background-color: rgba(46, 89, 129, 0.397);*/
-         border-radius: 15px;
-         background-color: #3b82f6;
-         padding: 30px;  
-         text-align: center;
-         width: 70%;
-         margin-left: auto;
-         margin-right: auto;
-         height: 100%
-      }
-
-      .main-content {
+      #main-content {
         background-color: white;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         padding: 0;
-        margin-top: 0px;
-        color: black;
+        /* margin-top: 0px; */
+        /* color: black; */
       }
 
       .Projects ul {
@@ -255,6 +243,7 @@
       }
       #project-title{
         font-size: 80px;
+        margin-top: 80px;
         /* font-family: 'Alliance No.1 Semi Bold', sans-serif; */
         color: rgb(0, 0, 0) !important;
       }
@@ -318,7 +307,74 @@
       #bottom-project {
         margin-bottom: 400px;
       }
+      .blog-homepage {
+        background-color: #130f40;
+        background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+        width: 100vw;
+        height: 100vh;
+      }
+      #blog-snippet {
+          color: black;
+      }
       
+      #blog-title {
+        padding-top: 50px;
+      }
+      
+      #blog-snippet {
+          line-height: 40px;
+      }
+      
+      #read-more{
+          color: #3b82f6;
+          font-size: 35px;
+          text-decoration: underline;
+      }
+      
+      .home-blog {    
+          border-radius: 15px;
+          border: none;
+          box-shadow: 0ch;
+          background-color: #ffffff;
+          padding: 30px;  
+          text-align: center;
+          font-size: 32px;
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto;
+          color: black !important;
+          margin-bottom: 50px;
+      }
+      
+      .scale-in-center {
+        -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+                animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+      }
+      
+       @-webkit-keyframes scale-in-center {
+          0% {
+            -webkit-transform: scale(0);
+                    transform: scale(0);
+            opacity: 1;
+          }
+          100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            opacity: 1;
+          }
+        }
+        @keyframes scale-in-center {
+          0% {
+            -webkit-transform: scale(0);
+                    transform: scale(0);
+            opacity: 1;
+          }
+          100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            opacity: 1;
+          }
+        }
       .blogpost p {
         color: white;
         font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
@@ -347,36 +403,6 @@
       }
       
      
-      /*All the timer stuff in HAGS*/
-      .Timer{
-        text-align: center;
-      }
-      .Timer ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-        display: inline-block;
-        *display: inline;
-        zoom: 1;
-        border-style: solid;
-        border-radius: 15px;
-        border-width: 2px;
-        border-color: #3b82f6;
-        width: 100px;
-        text-align: center;
-        background-color: #3b82f6;
-    }
-    .Timer ul #DaysUnits, #HoursUnits, #MinutesUnits, #SecondsUnits{
-      font-size: 15px;
-    }
-    .Timer ul li{
-      font-size: 360%;
-      text-align: center;
-      padding-bottom: 10px;
-      padding-top: 10px;
-      color: white;
-    }
 
     .footer-home-page {
       height: 100px;
@@ -399,7 +425,7 @@
       position: absolute;
       top: 50%;
       float: right;
-      padding-right: 20px;
+      padding-right: 30px;
       font-size: 20px;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -407,6 +433,8 @@
     
     .contact a{
       font-size: 25px !important;
+      color: black;
+      margin-right: 10px;
     }
 
     .contact a:hover {
