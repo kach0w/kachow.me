@@ -1,4 +1,11 @@
-
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Ubuntu&display=swap');        
+        #title-screen {
+            font-family: 'Open Sans', sans-serif;
+        }
+        body, h5 {
+               font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+/*             font-family: 'Ubuntu', sans-serif;         */
+        }
       body {
       background-color: white;
       margin: 0;
@@ -58,12 +65,6 @@
         line-height: normal;
         background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
     }
-
-    .links {
-      margin-top: 0px;
-      display: inline;
-    }
-
 
     .links a:hover {
       text-decoration: underline white;
@@ -227,7 +228,7 @@
     
     
 
-      #main-content {
+      .main-content {
         background-color: white;
         width: 100vw;
         height: 100vh;
@@ -421,12 +422,12 @@
     }    
 
     .contact {
+      display: inline;
       margin-left: 95vw;
-      position: absolute;
-      top: 50%;
-      float: right;
-      padding-right: 30px;
-      font-size: 20px;
+      position: relative;
+      top: 40%;
+      /* padding-right: 30px; */
+      font-size: 10px;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }    
@@ -434,7 +435,7 @@
     .contact a{
       font-size: 25px !important;
       color: black;
-      margin-right: 10px;
+      margin-right: 5px;
     }
 
     .contact a:hover {
