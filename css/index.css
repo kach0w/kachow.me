@@ -106,7 +106,7 @@
       animation-delay: 10s;
     }
     #title-screen {
-      font-size: 700% !important;
+      font-size: 900% !important;
       font-weight: 800 !important;
       line-height: 0;
       text-align: center;
@@ -115,8 +115,8 @@
       position: absolute;
       z-index: 1;
       top: 25vh;
-      left: 39vw;
-      right: auto;
+/*       left: 39vw;
+      right: auto; */
     }
     .fadeInTop {
       -webkit-animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
