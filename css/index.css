@@ -151,7 +151,7 @@
       
     }
     .ArrowDown{
-      margin-top: 85vh;
+      margin-top: 60vh;
       margin-left: 49vw;
       font-size: 35px;
       height: 100px;
@@ -336,6 +336,18 @@
           text-decoration: underline;
       }
       
+      #blogs-button {
+        background-color: white;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      #blogs-button:hover {
+        text-decoration: underline black;
+        text-underline-offset: 3px;
+
+      }
+
       .home-blog {    
           border-radius: 15px;
           border: none;
