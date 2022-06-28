@@ -105,6 +105,12 @@
       animation-fill-mode: both;
       animation-delay: 10s;
     }
+
+    .current {
+      text-decoration: underline #3b82f6;
+      text-underline-offset: 10px;
+    }
+
     #title-screen {
       font-size: 900% !important;
       font-weight: 800 !important;
@@ -344,7 +350,7 @@
 
       #blogs-button:hover {
         text-decoration: underline black;
-        text-underline-offset: 3px;
+        text-underline-offset: 5px;
 
       }
 
