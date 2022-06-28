@@ -10,5 +10,4 @@
 <li>Weather Forecast</li>
 <li>NBA Live Scores / Player Stats</li>
 <li>Apple Calculator</li>
-
 </ul>
