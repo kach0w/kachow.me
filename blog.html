@@ -10,6 +10,26 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a191de05ec.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/Gallery/rusteze.png" type="image/png" > 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $.fn.isInViewport = function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+        var blogScrolled = false;
+        $(window).on('resize scroll', function() {
+            if ($('.home-blog').isInViewport()) {
+                $('.home-blog').show();
+                $('.home-blog').addClass('scale-in-center');
+            } 
+            
+        });
+    </script> 
 </head>
 <body>
     <div class="wrapper">
@@ -24,7 +44,6 @@
         Hello. Welcome to the Blog / Stuff I am currently working on portion of this website.
     </p>
     <div class="blog-homepage">
-        <h1 id="blog-title" class="blog-title">Blog</h1>
         <div class="home-blog">
             <h2>Javascript</h2>
             <h5>April 16, 2022</h5>
