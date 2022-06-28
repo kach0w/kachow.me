@@ -112,7 +112,7 @@
       text-align: center;
       align-items: center;
       justify-content: center;
-      position: absolute;
+      position: relative;
       z-index: 1;
       top: 25vh;
 /*       left: 39vw;
