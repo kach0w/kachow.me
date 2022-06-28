@@ -146,7 +146,10 @@
         opacity: 1;
       }
     }
-    
+    .logo {
+      text-align: center;
+      
+    }
     .ArrowDown{
       margin-top: 85vh;
       margin-left: 49vw;
