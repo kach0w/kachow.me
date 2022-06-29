@@ -22,13 +22,24 @@
             return elementBottom > viewportTop && elementTop < viewportBottom;
         };
         var blogScrolled = false;
-        $(window).on('resize scroll', function() {
-            if ($('.home-blog').isInViewport()) {
+        // $(window).on('resize scroll', function() {
+        //     if ($('.home-blog').isInViewport() && !blogScrolled) {
+        //         $('.home-blog').show();
+        //         $('.home-blog').addClass('scale-in-center');
+        //         blogScrolled = true;
+
+        //     } 
+            
+        // });
+        window.onload = function() {
+            if ($('.home-blog').isInViewport() && !blogScrolled) {
                 $('.home-blog').show();
                 $('.home-blog').addClass('scale-in-center');
+                blogScrolled = true;
+
             } 
             
-        });
+        };
     </script> 
 </head>
 <body>
@@ -40,10 +51,18 @@
             <a href="https://kachow.me/index#main-content">Projects</a> 
         </div> 
     </div>
-    <p>
-        Hello. Welcome to the Blog / Stuff I am currently working on portion of this website.
-    </p>
+
     <div class="blog-homepage">
+        <div class="home-blog">
+            <h2>Pokédex</h2>
+            <h5>June 21, 2022</h5>
+            <p id="blog-snippet">    
+                As I have been gaining experience with calling APIs in React apps, I wanted to make one of my first ideas when it came to apis, a Pokédex. 
+                I looked and found many different APIs on sites like RapidAPI but eventually found one called PokéAPI. It has very extensive documentation
+                and data about each pokémon along with pictures which many other ones lack... 
+            </p>
+            <a href="https://kachow.me/Blog/javascript.html" id="read-more">Read More</a>
+        </div>
         <div class="home-blog">
             <h2>Javascript</h2>
             <h5>April 16, 2022</h5>
@@ -54,7 +73,15 @@
             </p>
             <a href="https://kachow.me/Blog/javascript.html" id="read-more">Read More</a>
         </div>
-        <a href="https://kachow.me/blog" id="blogs-button">More Blog Posts</a>
+        
+        <div class="home-blog">
+            <h2>Test</h2>
+            <h5>June 28, 2022</h5>
+            <p id="blog-snippet">    
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <a href="https://kachow.me/Blog/javascript.html" id="read-more">Read More</a>
+        </div>
     </div>
     <div class="footer-home-page">
         <div class="location">
