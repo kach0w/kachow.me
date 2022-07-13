@@ -160,6 +160,16 @@ animation-delay: 10s; */
   background-color: rgb(176, 231, 248);
 }
 
+#language {
+  padding-bottom: 5px;
+  color: #3b82f6;
+  font-size: 1.5rem;
+}
+
+#project-subtitle {
+  font-family: Inter, sans-serif;
+}
+
 .blog-homepage {
   width: 100vw;
   height: 100vh;
