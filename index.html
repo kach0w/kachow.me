@@ -23,15 +23,7 @@
 
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
-    $(window).scroll(function() {
-        if ($(this).scrollTop()> 20) {
-            $('.ArrowDown').fadeOut();
-        }
-        else {
-        $('.ArrowDown').fadeIn();
-        }
-       
-    });
+    
     var projectScrolled = false;
     var blogScrolled = false;
     $(window).on('resize scroll', function() {
@@ -53,56 +45,90 @@
 </script>  
 </head>    
 <body>
-    <div class="wrapper">
+    <header>
         <div class="links">
             <a class="current" href="https://kachow.me">Home</a> 
+            <a class="current" href="https://kachow.me/index#about">About</a>  
+            <a href="https://kachow.me/index#projects">Projects</a>   
             <a class="current" href="https://kachow.me/blog">Blog</a>
-            <a class="current" href="https://kachow.me/aboutme">About</a>    
-            <a href="https://kachow.me/index#main-content">Projects</a> 
         </div> 
-        <div class="logo">
-            <h1 id="title-screen" class="fadeInTop">Kachow</h1>
+    </header>
+    <div class="main">
+        <div class="intro">
+            <div class="subtitle">
+                <p style="font-size: 30px; color:white">Hello, I'm</p>
+                <h1>Karthik.</h1> 
+            </div>
+            <div class="intro-about-me">
+                I am heavily interested in programming, especially in the field of web development
+                and languages like: Java, C++, Python, HTML, CSS, and Javascript. As I am learning these languages, I make
+                projects and try to implement different ideas I have. Here is a glimpse into some of things I do: 
+            </div>
         </div>
-
-
-        <div class="ArrowDown" id="arrow">
-            <a><i class="fa-solid fa-arrow-down"></i></a> 
-        </div>      
-        
-    </div>
-    <div class="main-content" id="main-content" style="height: 90vh">
-        <h1 id="project-title">Projects:</h1>
-
-        <div class="Projects" id="Projects">
-        <ul>
-            <li><a href="https://pokedex.kachow.me">Pokédex</a></li>
-            <li><a href="/Calculator/calculator">Apple Calculator</a></li>
-            <li><a href="https://kachow.me/Weather/weather">Weather Forecast</a></li>
-            <li><a href="https://scores.kachow.me">NBA Live Scores</a></li>
-            <li><a href="https://stats.kachow.me">Player Stats</a></li>
-            <li><a href='https://stats.uptimerobot.com/xNpRyiLMBN'>Discord Bot Status</a></li>
-            <!-- <li><a id="bottom-project" href='email'>Email API</a></li> -->
-            <!--
-            <li><a href="https://kachow.me/blender">Blender Projects</a></li>
-            <li><a href="https://kachow.me/AEWS">Assesment Expectancy Warning System</a></li>
-            <li><a href="https://kachow.me/lastdayofschool">Days Till School is Over!</a></li>
-            -->
-        </ul>
+        <div class="about-me" id="about">
+            <div class="subtitle">
+                <h1>About Me.</h1> 
+            </div>
+            <div class="intro-about-me">
+                I am 14 years old and am going to Basis Independent Silicon Valley. I have been around computers for most
+                of my life and this sparked my interest in programming. I first started programming with Python around 4
+                years ago. After 2 years, and some free time during the Pandemic, I started learning Java. With Java I was
+                able to start participating in competitions like USACO and since then I have become more and more passionate
+                about competitive programming. During this time I have branched out into web development that originally started
+                with this website, and now includes various projects I have worked on. 
+            </div>
         </div>
-    </div>
-    <div class="blog-homepage">
-        <h1 id="blog-title" class="blog-title">Blog</h1>
-        <div class="home-blog">
-            <h2>Javascript</h2>
-            <h5>April 16, 2022</h5>
-            <p id="blog-snippet">    
-                Recently, I have been getting interested in the programming language, javascript. In fact, it is the reason that I am currently making this website. 
-                I went down this rabbithole because of my interest in making a Discord bot. The bot's purpose was to have fun with some friends by using the bot to 
-                secretly dm non-adminstrators in my server from a secret text channel. Later, I was interested in trolling some friends with a javascript program... 
-            </p>
-            <a href="https://kachow.me/Blog/javascript.html" id="read-more">Read More</a>
+        <div class="projects" id="projects">
+            <div class="subtitle">
+                <h1>Projects.</h1> 
+                <p style="font-size: 30px; color:white">I am always trying out new things.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img style="float:left; padding-left: 75px;" src="/Gallery/Favicons/pokeball.png" width="30px" height="30px">
+                    <a  style="padding-right: 75px;" href="https://pokedex.kachow.me">Pokédex</a>
+                    <p id="project-subtitle">Search and view different pokemon with the PokeAPI </p>
+                </div>
+                <div class="project-card">
+                    <img style="float:left; padding-left: 15px;" src="/Gallery/Favicons/Calculator.png" width="30px" height="30px">
+                    <a href="/Calculator/calculator">Apple Calculator</a>
+                    <p id="project-subtitle">Tried to make a recreation of the Apple calculator </p>
+                </div>
+                <div class="project-card">
+                    <img style="float:left; padding-left: 15px;" src="/Gallery/Favicons/weatherlogo.png" width="30px" height="30px">
+                    <a href="https://kachow.me/Weather/weather">Weather Forecast</a>
+                    <p id="project-subtitle">The Weather, all at the click of a button</p>
+                </div>
+                <div class="project-card">
+                    <img style="float:left; padding-left: 15px;" src="/Gallery/Favicons/bball.png" width="30px" height="30px">
+                    <a href="https://scores.kachow.me">NBA Live Scores</a>
+                    <p id="project-subtitle">The first NBA related project I made, used a tutorial from @arslanah99</p>
+                </div>
+                <div class="project-card">
+                    <img style="float:left; padding-left: 0px; padding-bottom:5px" src="/Gallery/Favicons/nbalogo.png" width="30px" height="67px">
+                    <a style="padding-right: 35px;" href="https://stats.kachow.me">Player Stats</a>
+                    <p id="project-subtitle" style="margin-top: 10px">Part of nba related stuff I made using the balldontlie api </p>
+                </div>
+                <div class="project-card">
+                    <img style="float:left; padding-left: 45px; padding-top:4px" src="/Gallery/Favicons/discord.png" width="44px" height="24px">
+                    <a style="padding-right: 45px;" href='https://stats.uptimerobot.com/yOqVzc7pJg'>Bot Status</a>
+                    <p id="project-subtitle">A status page for my discord bot</p>
+                </div>
+            </div>
         </div>
-        <a href="https://kachow.me/blog" id="blogs-button">More Blog Posts</a>
+        <div class="blog-homepage">
+            <h1 id="blog-title" class="blog-title">Blog.</h1>
+            <div class="home-blog">
+                <h2 style="font-family: Inter, sans serrif;">Javascript</h2>
+                <h5>April 16, 2022</h5>
+                <p id="blog-snippet">    
+                    Recently, I have been getting interested in the programming language, javascript. In fact, it is the reason that I am currently making this website. 
+                    I went down this rabbithole because of my interest in making a Discord bot. The bot's purpose was to have fun with some friends by using the bot to 
+                    secretly dm non-adminstrators in my server from a secret text channel. Later, I was interested in trolling some friends with a javascript program... 
+                </p>
+                <a href="https://kachow.me/Blog/javascript.html" id="read-more">Read More</a>
+            </div>
+            <a href="https://kachow.me/blog" id="blogs-button">More Blog Posts</a>
     </div>
     <div class="footer-home-page">
         <div class="location">
