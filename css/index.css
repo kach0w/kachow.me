@@ -206,14 +206,12 @@ animation-delay: 10s; */
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  justify-items: center;
-  padding: 0rem 2rem 2rem;
-  gap: 50px;
-  width: min(calc(100% - 4rem),1000px);
-  overflow: hidden;
+  width: 60vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .project-card {
@@ -231,7 +229,24 @@ animation-delay: 10s; */
 }
 
 .project-card:hover {
-  background-color: rgb(176, 231, 248);
+  /* background-color: rgb(176, 231, 248); */
+  animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+  20% {
+      transform: translateY(-6px);
+  }
+  40% {
+      transform: translateY(0px);
+  }
+
+  80% {
+      transform: translateY(-2px);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
 
 #language {
