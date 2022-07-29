@@ -79,7 +79,7 @@ a:active { text-decoration: none; }
   text-underline-offset: 10px;
 
 }
-.links a, .dropdown-btn {
+.links a {
   text-decoration: none;
   font-size: 20px;
   color: #ffffff;
@@ -100,6 +100,43 @@ transition-timing-function: linear;
 opacity: 0;
 animation-fill-mode: both;
 animation-delay: 10s; */
+}
+
+.projects-link {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  word-wrap: normal;
+  display: inline-block;
+}
+
+.dropdown{
+  opacity: 0.92;
+  background-color: white;
+  display: none;
+  width: 200px;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  overflow: none;
+  border-radius: 8px;
+}
+
+.dropdown ul {  padding-left: 0;list-style: none; text-align: center; align-items: center;}
+
+.dropdown a { color: black; font-size:15px; font-weight: bold;}
+
+.dropdown a:hover {text-decoration: underline rgb(0, 0, 0);
+  text-underline-offset: 10px;}
+
+
+.projects-link:hover .dropdown {
+  display: block;
 }
 
 .intro {
