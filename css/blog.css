@@ -3,23 +3,29 @@
 
 #title-screen {
     /*font-family: 'Ubuntu', sans-serif;  */   
-    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
 
+    font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
 }
 body, h5 {
-       font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
 /*             font-family: 'Ubuntu', sans-serif;         */
 }
 body {
     /* background-color: white; */
-    background-color: #152238;
+    background-color: rgba(15,23,42); 
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     color: white;
     text-align: center;
 }
-
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+    background-color: rgba(15,23,42); 
+  }
 h1 {
     color: rgb(255, 255, 255);
     font-feature-settings: "ss02" on,"ss01" on;
@@ -37,7 +43,7 @@ h2 {
     text-align: center;
     line-height: 40%;
     font-weight: 10;
-    font-family: Inter, sans-serif !important;
+    font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
 }
 h3 {
     color: rgb(230, 230, 230);
@@ -64,27 +70,30 @@ a:active { text-decoration: none; }
 
 .wrapper{
     width: 100vw;
+    /* height: 100vh !important; */
     align-items: center;
     text-align: center;
     line-height: normal;
-}
-
-.links a:hover {
+  }
+  
+  .links a:hover {
     text-decoration: underline white;
     text-underline-offset: 10px;
-}
-
-.links {
+  
+  }
+  
+  .links {
     margin-top: 0px;
     display: inline;
-}
-
-.links a:hover {
+    height: 20vh;
+  }
+  
+  .links a:hover {
     text-decoration: underline white;
     text-underline-offset: 10px;
-}
-
-.links a, .dropdown-btn {
+  
+  }
+  .links a {
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
@@ -99,41 +108,51 @@ a:active { text-decoration: none; }
     border-radius: 8px;
     word-wrap: normal;
     display: inline-block;
-}
-
-.current {
-    text-decoration: underline #3b82f6;
-    text-underline-offset: 10px;
-}
-
-@keyframes FadeIn {
-
-    0% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
-    }
-
-    @-moz-keyframes FadeIn {
-    0% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
-    }
-
-    @-webkit-keyframes FadeIn {
-    0% {
-    opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
-}
-
+  /* animation-name: FadeIn;
+  animation-duration: 3s;
+  transition-timing-function: linear;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 10s; */
+  }
+  
+  .projects-link {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px;
+    word-wrap: normal;
+    display: inline-block;
+  }
+  
+  .dropdown{
+    opacity: 0.92;
+    background-color: white;
+    display: none;
+    width: 200px;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    overflow: none;
+    border-radius: 8px;
+  }
+  
+  .dropdown ul {  padding-left: 0;list-style: none; text-align: center; align-items: center;}
+  
+  .dropdown a { color: black; font-size:12px; font-weight:500; }
+  
+  .dropdown a:hover {text-decoration: underline rgb(0, 0, 0);
+    text-underline-offset: 10px;}
+  
+  
+  .projects-link:hover .dropdown {
+    display: block;
+  }
+  
 .blog-homepage {
     width: 100vw;
 
@@ -252,14 +271,14 @@ text-underline-offset: 3px;
 
 .contact {
     display: inline;
-    margin-left: 95vw;
+    margin-left: 70vw;
     position: relative;
     top: 40%;
     /* padding-right: 30px; */
     font-size: 10px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}    
+  }    
 
 .contact a{
     font-size: 25px !important;

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Ubuntu&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=JetBrains+Mono&display=swap');
+
 body, h5 {
   font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
 }
