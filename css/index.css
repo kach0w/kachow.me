@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Ubuntu&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');       
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=JetBrains+Mono&display=swap');
 body, h5 {
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
 }
 body {
-  background-color: #152238;
+  background-color: rgba(15,23,42); 
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -15,10 +16,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 1; 
-  background-color: #152238;
+  background-color: rgba(15,23,42); 
 }
 h1 {
-  color: rgb(255, 255, 255);
+  color: rgb(229, 255, 0);
   font-size: 100px;
   font-weight: 100;
   line-height: 40%;
@@ -129,7 +130,7 @@ animation-delay: 10s; */
 
 .dropdown ul {  padding-left: 0;list-style: none; text-align: center; align-items: center;}
 
-.dropdown a { color: black; font-size:15px; font-weight: bold;}
+.dropdown a { color: black; font-size:12px; font-weight:500; }
 
 .dropdown a:hover {text-decoration: underline rgb(0, 0, 0);
   text-underline-offset: 10px;}
@@ -187,7 +188,9 @@ animation-delay: 10s; */
 
 .project-card a {
   font-size: 25px;
-  font-family: Inter, sans-serif
+  font-family: JetBrains Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;  /* font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; */
+
+  /* font-family: Inter, sans-serif */
 }
 
 .project-card:hover {
@@ -315,7 +318,7 @@ animation-delay: 10s; */
 
 .contact {
   display: inline;
-  margin-left: 95vw;
+  margin-left: 70vw;
   position: relative;
   top: 40%;
   /* padding-right: 30px; */
