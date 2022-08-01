@@ -130,7 +130,7 @@ a:active { text-decoration: none; }
   }
   
   .dropdown{
-    opacity: 0.92;
+    opacity: 1;
     background-color: white;
     display: none;
     width: 200px;
